@@ -1,7 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { createMemoryHistory, createBrowserHistory } from "history";
 import { App } from "./App";
+import './style.scss'
 
 const mount = (el, { onSignIn ,onNavigate, defaultHistory, initialPath }) => {
 

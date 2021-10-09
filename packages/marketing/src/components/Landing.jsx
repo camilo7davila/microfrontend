@@ -67,7 +67,7 @@ export default function Album() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <>
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -161,6 +161,6 @@ export default function Album() {
         <Copyright />
       </footer>
       {/* End footer */}
-    </React.Fragment>
+    </>
   );
 }

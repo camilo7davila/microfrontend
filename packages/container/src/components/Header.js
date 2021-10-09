@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Header({ isSignedIn, onSignOut }) {
+export default function Header({ isSignedIn, onSignOut, user }) {
   const classes = useStyles();
 
   const onClick = () => {
@@ -81,6 +81,20 @@ export default function Header({ isSignedIn, onSignOut }) {
           >
             App
           </Typography>
+          {
+            user && (
+              <Typography
+                variant="h6"
+                color="inherit"
+                noWrap
+                component={RouterLink}
+                to="/perfil"
+              >
+                Perfil
+              </Typography>
+            )
+          }
+
           <Button
             color="primary"
             variant="outlined"

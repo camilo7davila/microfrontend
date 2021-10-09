@@ -14,14 +14,6 @@ const rulesForJavascript = {
   }
 }
 
-const rulesForTypeScript = {
-  test: /\.(ts|tsx)$/,
-  exclude: /node_modules/,
-  use: {
-    loader: "awesome-typescript-loader"
-  }
-}
-
 const rules = [rulesForJavascript]
 
 module.exports = {
